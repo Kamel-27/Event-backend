@@ -19,7 +19,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173", // ✅ update this when frontend is deployed
+    origin: [
+      process.env.CLIENT_URL ||
+        "https://event-frontend-1g72-kmkmp2101-8836s-projects.vercel.app",
+      "http://localhost:5173",
+    ],
     credentials: true,
   })
 );
