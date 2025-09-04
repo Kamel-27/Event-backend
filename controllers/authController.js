@@ -54,6 +54,7 @@ export const register = async (req, res) => {
       .json({
         success: true,
         message: "User registered successfully",
+        token,
         user: {
           _id: newUser._id,
           name: newUser.name,
@@ -112,6 +113,7 @@ export const login = async (req, res) => {
     return res.json({
       success: true,
       message: "Login successful",
+      token,
       user: {
         _id: user._id,
         name: user.name,
