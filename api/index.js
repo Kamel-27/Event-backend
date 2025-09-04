@@ -21,7 +21,7 @@ app.use(
   cors({
     origin: [
       process.env.CLIENT_URL ||
-        "https://event-frontend-1g72-kmkmp2101-8836s-projects.vercel.app",
+        "https://event-frontend-rho.vercel.app",
       "http://localhost:5173",
     ],
     credentials: true,
